@@ -4,13 +4,21 @@
 A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 
 # Research questions
-A list of research questions you would like to address during the project. 
-
+- What is the environmental impact of food products ? 
+- Who are the worst and who are the best eco friendly consummers ? 
+- Compute distance for food from their selling point to origin ( use geopy ) 
+- See what food contains palm oil - is it on the rise ? 
+- Is the carbon footprint only related to distance ? 
+- 
 # Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
+- Open food facts database
+
 
 # A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
+We first need to extract the data relevant to our project. We will also need to clean up a lot of the data as there is a lot of values that are empty or not filled in yet. 
+
+- 14th of November : Explore the dataset, clean it. 
+- 21th of November : Extracting the values that will be relevant for this project, with those values create additional features ( such as distance to origin. ) 
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+- 
