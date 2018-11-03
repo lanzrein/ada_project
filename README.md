@@ -1,7 +1,12 @@
 # Title
+???
+# Abstract (150w approx)
+As ecology grows a more important concern, populations need not only to focus on driving less or consuming less, but also on how we consume food. 
+It is a known fact that consuming products derived from palm oil, or meat in general is much more damaging for the environment than growing your own vegetables. 
+During this project, we aim to expose how to be more regarding towards the environment in our daily food consumption. 
+We will use a dataset of the Open Food Facts Database and look into where the food comes and how much it has had to travel. Moreover in our study, we will take note of what region and countries 
+are leading when it comes to sustainable food and who should take lesson from them. 
 
-# Abstract
-A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 
 # Research questions
 - What is the environmental impact of food products ? 
