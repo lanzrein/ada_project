@@ -17,7 +17,8 @@ The main goal is to investigate the world of food and understand what are the ne
 - See what food contains palm oil - is it on the rise ? 
 - Is the carbon footprint only related to distance ? 
 - Are the newly added product more eco-friendly ?  
-
+- What countries produce more vegan-labelled products ? Is the frequence of those products increasing with time ?
+  
 # Dataset
 We will use the Open Food Facts database. We will use mainly the tags such as ‘manufacturing\_places’ and ‘countries’. In addition, we will take help of ‘geopy’ to find the coordinate of those place and thus be able to compute the distances. 
 Since our focus is more on the ecological aspect of food, we will not be using many of the nutritional facts.
@@ -30,5 +31,6 @@ We first need to extract the data relevant to our project. We will also need to 
 - 24th of November : Produce statistics from the datasets that are relevant to our research questions. 
 # Questions for TAs
 
-- Is it fine to have a larger pannel of research questions and then as we progress in the progress remove less interesting ones and add new ones ? If they are relevant for the project. 
+- Is it fine to have a larger pannel of research questions and then as we progress in the progress remove less interesting ones and add new ones ? If they are relevant for the project.
+- Is it fine to work on several codes/notebooks addressing the different questions, and then group the results and vizualisations ?
 
