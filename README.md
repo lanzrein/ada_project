@@ -1,6 +1,5 @@
 # Title
-How much does our Food travel ?
-
+The many faces of foods' impact on our ecology
 
 # Abstract (150w approx)
 As ecology grows a more important concern, populations need not only to focus on driving less or consuming less, but also on how they consume food. 
@@ -21,7 +20,7 @@ The main goal is to investigate the world of food and understand what are the ne
 
 # Dataset
 We will use the Open Food Facts database. We will use mainly the tags such as ‘manufacturing\_places’ and ‘countries’. In addition, we will take help of ‘geopy’ to find the coordinate of those place and thus be able to compute the distances. 
-Since our focus is more on the ecological aspect of food, we will many of the nutritional facts. 
+Since our focus is more on the ecological aspect of food, we will not be using many of the nutritional facts.
 
 # A list of internal milestones up until project milestone 2
 We first need to extract the data relevant to our project. We will also need to clean up a lot of the data as there is a lot of values that are empty or not filled in yet. 
@@ -32,4 +31,4 @@ We first need to extract the data relevant to our project. We will also need to 
 # Questions for TAs
 
 - Is it fine to have a larger pannel of research questions and then as we progress in the progress remove less interesting ones and add new ones ? If they are relevant for the project. 
--  
+
