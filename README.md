@@ -1,5 +1,5 @@
 # Title
-The many faces of foods' impact on our ecology
+An ecological study of the food industry 
 
 # Abstract (150w approx)
 As ecology grows a more important concern, populations need not only to focus on driving less or consuming less, but also on how they consume food. 
@@ -13,7 +13,7 @@ The main goal is to investigate the world of food and understand what are the ne
 - Compute distance for food from their selling point to origin ( use geopy ) 
   - Look which category of food product travel more. (dry food, preprepared meal)
   - Look if ecological labels such as "Agriculture Biologique" are more aware to the distance travelled by food
-- Look at the distance that mineral water in bottle travela
+- Look at the distance that mineral water in bottle travels
 - See what food contains palm oil - is it on the rise ? 
 - Is the carbon footprint only related to distance ? 
 - Are the newly added product more eco-friendly ?  
