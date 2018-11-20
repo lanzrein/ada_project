@@ -1,0 +1,8 @@
+# Data folder
+data/*
+
+# All csv files 
+*.csv
+
+# all jsonfiles 
+*.json
