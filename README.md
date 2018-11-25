@@ -50,3 +50,31 @@ We first need to extract the data relevant to our project. We will also need to 
 <p> discuss how your data suits your project needs and discuss the methods you’re going to use, giving their essential mathematical details in the notebook. </p>
 
 - your plan for analysis and communication is now reasonable and sound, potentially discussing alternatives to your choices that you considered but dropped.
+
+--------
+
+**Part 1: Finding the information of interest to answer the different questions (handle data in its size, understand what is into the data, filtering)**
+
+We have explored the data thoroughly in different files with names DataExploration. The dataset is composed of 681602 different products. Each product is represented by 173 different features. We have noticed that they are many many missing values, not all the features are complete for a given product. This will impact negatively on our analysis as only a subset of the products can be used to answer the question. Those subsets will be obtained using filtering to keep only products that contain values for the features of interest.
+
+First, we based ourselves on the features’ description given on the dataset website (https://static.openfoodfacts.org/data/data-fields.txt). Nevertheless, we observed that new columns were added. Also, several columns contain repetitive information but sometimes one column is more useful as it contains the English translation. For instance the label of the product are contain in three different features: 'labels', 'labels_tags' and 'labels_en'. In such cases, we will use 'labels_en' as the tags are translated in English and thus it avoids some language handling problems. More genrally, data exploration was useful to determine which are the different columns which will be useful to answer the different questions we had.
+
+More precisely, here is the different filtering we done:
+- For all question regarding distance calculations, we will use origins_tags, first_packaging_code_geo and/or manufacturing_places_tags as starting point. We mixed them in order to have more products (88001 in total). Then the arrival point is represented with the countries_en feature. (see DistanceCalculations.ipynb)
+
+- For questions regarding a specific kind of product (water bottle for instance), we used the feature categories_en. We split the feature in order to obtain the different categories and then filter in order to obtain the index of the product with the category of interest. (see WaterBottle.ipynb)
+
+-	For question regarding the evolution of a label of evolution of the use of palm oil, 
+
+We also consider enriching our data:
+- For distance calculation, once the starting and arrival point are computed, we used geopy to obtain their respective coordinate. This will allow us to compute easily the distance that the product has travelled. (DistanceCalculations.ipynb) 
+- For the water bottle, we aimed to compute the distance between the source and the point where the bottle is sold. As the source is not always indicated, we have been trying to get the origin of articles where the information is missing (VeryBeautifulSoupTesting.ipynb ). 
+Moreover, we already produce several pipelines which could be generalized and used on different categories of food product if we want to compare them in the future.
+
+**Part 2: Update of our plan**
+
+The question “What is the environmental impact of food products?” is more the general question that we want to answer given the dataset we have. Then, we thought of several ways to answer it: either but looking at the distance that the product is traveling, looking at the label, the carbon footprint given on the product.
+
+We already face several problems and thought of ways to overcome them.
+-	We wanted to study the carbon footprint and try to determine what it is related to (distance, bio,…). Once we filtered the product that contain information regarding carbon footprint, we observed that only 342 products have this information which is too little to draw any conclusion. 
+
