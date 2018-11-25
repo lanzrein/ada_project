@@ -68,7 +68,9 @@ More precisely, here is the different filtering we done:
 
 We also consider enriching our data:
 - For distance calculation, once the starting and arrival point are computed, we used geopy to obtain their respective coordinate. This will allow us to compute easily the distance that the product has travelled. (DistanceCalculations.ipynb) 
+
 - For the water bottle, we aimed to compute the distance between the source and the point where the bottle is sold. As the source is not always indicated, we have been trying to get the origin of articles where the information is missing (VeryBeautifulSoupTesting.ipynb ). 
+
 Moreover, we already produce several pipelines which could be generalized and used on different categories of food product if we want to compare them in the future.
 
 **Part 2: Update of our plan**
