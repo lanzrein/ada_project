@@ -70,14 +70,12 @@ We already face several problems and thought of ways to overcome them.
 -	For the distance computation we are currently facing some problem with the merge of the different instances used as starting point. And searching how to deal with multiple starting points. We are considering using multiple point as start positions to consider all cases: perhaps the origin of the product depends on the season, or multiple ingredient of a product may come from different countries. Therefore, all origin should be considered.
 
 -	We wanted to study the carbon footprint and try to determine what it is related to (distance, bio,…). Once we filtered the product that contain information regarding carbon footprint, we observed that only 342 products have this information which is too little to draw any conclusion. 
-Moreover, the dataset is fairly sparse with many holes and nan values. Concerning this we will try to address the issues in the following way : 
 
-
-For the rest of the project, we will focus more on the distance the products travelled and use a formula to estimate how much pollution this generates. Then we will verify how this extra information relates to our already computed information about each country. 
+**What next ?**
 
 In the end, we would be interested in doing a sort of ecological competition between each country. This would be done by allocating points to each country based on how ecological they are on each categories. In the end we would have a leaderboard of the countries and this would give some insights on how good the countries are at being ecological. 
 
-
+The competition ??
 
 ## Final milestone goals : 
 - Compute a fair equation to express the carbon footprint of the food. 
