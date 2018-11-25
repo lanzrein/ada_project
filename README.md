@@ -34,18 +34,10 @@ We first need to extract the data relevant to our project. We will also need to 
 - Is it fine to have a larger pannel of research questions and then as we progress in the progress remove less interesting ones and add new ones ? If they are relevant for the project.
 - Is it fine to work on several codes/notebooks addressing the different questions, and then group the results and vizualisations ?
 
-
+--------
 
 # Milestone 2 checklist : 
 
-
-- updated your plan in a reasonable way, reflecting your improved knowledge after data acquaintance.
-
-<p> discuss how your data suits your project needs and discuss the methods you’re going to use, giving their essential mathematical details in the notebook. </p>
-
-- your plan for analysis and communication is now reasonable and sound, potentially discussing alternatives to your choices that you considered but dropped.
-
---------
 
 **Part 1: Finding the information of interest to answer the different questions (handle data in its size, understand what is into the data, filtering)**
 
@@ -63,9 +55,7 @@ More precisely, here is the different filtering we done:
 We also consider enriching our data:
 - For distance calculation, once the starting and arrival point are computed, we used geopy to obtain their respective coordinate. This will allow us to compute easily the distance that the product has travelled. (DistanceCalculations.ipynb) 
 
-- For the water bottle, we aimed to compute the distance between the source and the point where the bottle is sold. As the source is not always indicated, we have been trying to get the origin of articles where the information is missing (VeryBeautifulSoupTesting.ipynb ). 
-
-- For the origin, we considered using requests and beautiful soup to get the origin of products on wikipedia. This however proved to be not very effective time wise and also precision wise. ( see VeryBeautifulSoupTest.ipynb )
+- For the water bottle, we aimed to compute the distance between the source and the point where the bottle is sold. As the source is not always indicated, we have been trying to get the origin of articles where the information is missing. For the origin, we considered using requests and beautiful soup to get the origin of products on wikipedia. This however proved to be not very effective time wise and also precision wise. ( see VeryBeautifulSoupTest.ipynb )
 
 Moreover, we already produce several pipelines which could be generalized and used on different categories of food product if we want to compare them in the future.
 
@@ -74,6 +64,11 @@ Moreover, we already produce several pipelines which could be generalized and us
 The question “What is the environmental impact of food products?” is more the general question that we want to answer given the dataset we have. Our study's main goal is to offer an analysis on our consumption habits and their daily impact on the environment. We thought of several ways to answer it: either by looking at the distance that the product is traveling, looking at the label, the carbon footprint given on the product.
 
 We already face several problems and thought of ways to overcome them.
+
+-	We also notice during the data exploration that the majority of the products in the database are French products. Thus, there is a large bias toward France depending the analysis that will be done. In order to avoid that bias, instead of simply counting the label per country we decided to use proportions.
+
+-	For the distance computation we are currently facing some problem with the merge of the different instances used as starting point. And searching how to deal with multiple starting points. We are considering using multiple point as start positions to consider all cases: perhaps the origin of the product depends on the season, or multiple ingredient of a product may come from different countries. Therefore, all origin should be considered.
+
 -	We wanted to study the carbon footprint and try to determine what it is related to (distance, bio,…). Once we filtered the product that contain information regarding carbon footprint, we observed that only 342 products have this information which is too little to draw any conclusion. 
 Moreover, the dataset is fairly sparse with many holes and nan values. Concerning this we will try to address the issues in the following way : 
 
