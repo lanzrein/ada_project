@@ -49,7 +49,7 @@ We first need to extract the data relevant to our project. We will also need to 
 
 **Part 1: Finding the information of interest to answer the different questions (handle data in its size, understand what is into the data, filtering)**
 
-We have explored the data thoroughly in different files with names DataExploration. <a href="./DataExploration_JeV.ipynb"> here </a> and <a href="data_exploration_johan.ipynb"> here </a>. The dataset is composed of 681602 different products. Each product is represented by 173 different features. We have noticed that they are many many missing values, not all the features are complete for a given product. This will impact negatively on our analysis as only a subset of the products can be used to answer the question. Those subsets will be obtained using filtering to keep only products that contain values for the features of interest.
+We have explored the data thoroughly in different files with names DataExploration. <a href="./DataExploration_JeV.ipynb"> here </a> and <a href="./data_exploration_johan.ipynb"> here </a>. The dataset is composed of 681602 different products. Each product is represented by 173 different features. We have noticed that they are many many missing values, not all the features are complete for a given product. This will impact negatively on our analysis as only a subset of the products can be used to answer the question. Those subsets will be obtained using filtering to keep only products that contain values for the features of interest.
 
 First, we based ourselves on the features’ description given on the dataset website (https://static.openfoodfacts.org/data/data-fields.txt). Nevertheless, we observed that new columns were added. Also, several columns contain repetitive information but sometimes one column is more useful as it contains the English translation. For instance the label of the product are contain in three different features: 'labels', 'labels_tags' and 'labels_en'. In such cases, we will use 'labels_en' as the tags are translated in English and thus it avoids some language handling problems. More genrally, data exploration was useful to determine which are the different columns which will be useful to answer the different questions we had.
 
@@ -58,7 +58,7 @@ More precisely, here is the different filtering we done:
 
 - For questions regarding a specific kind of product (water bottle for instance), we used the feature categories_en. We split the feature in order to obtain the different categories and then filter in order to obtain the index of the product with the category of interest. (see WaterBottle.ipynb)
 
--	For question regarding the evolution of a label of evolution of the use of palm oil, 
+-	For question regarding the evolution of a label of evolution of the use of palm oil, we focused on products which had information about palm oil. However we kept used all the products whend standardizing our data to have a more meaningful analysis. 
 
 We also consider enriching our data:
 - For distance calculation, once the starting and arrival point are computed, we used geopy to obtain their respective coordinate. This will allow us to compute easily the distance that the product has travelled. (DistanceCalculations.ipynb) 
@@ -75,9 +75,20 @@ The question “What is the environmental impact of food products?” is more th
 
 We already face several problems and thought of ways to overcome them.
 -	We wanted to study the carbon footprint and try to determine what it is related to (distance, bio,…). Once we filtered the product that contain information regarding carbon footprint, we observed that only 342 products have this information which is too little to draw any conclusion. 
+Moreover, the dataset is fairly sparse with many holes and nan values. Concerning this we will try to address the issues in the following way : 
+
 
 For the rest of the project, we will focus more on the distance the products travelled and use a formula to estimate how much pollution this generates. Then we will verify how this extra information relates to our already computed information about each country. 
 
 In the end, we would be interested in doing a sort of ecological competition between each country. This would be done by allocating points to each country based on how ecological they are on each categories. In the end we would have a leaderboard of the countries and this would give some insights on how good the countries are at being ecological. 
 
-In conclusion, our study will focus more on the distance and the relation it has with other characteristics associated with ecological behaviors. 
+
+
+## Final milestone goals : 
+- Compute a fair equation to express the carbon footprint of the food. 
+- Create a graph that will show who imports and who exports
+- ???
+
+
+## Questions for TA : 
+- Is there a library that works like folium that allows to do network graphs ? 
