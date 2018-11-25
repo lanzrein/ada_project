@@ -34,3 +34,19 @@ We first need to extract the data relevant to our project. We will also need to 
 - Is it fine to have a larger pannel of research questions and then as we progress in the progress remove less interesting ones and add new ones ? If they are relevant for the project.
 - Is it fine to work on several codes/notebooks addressing the different questions, and then group the results and vizualisations ?
 
+
+
+# Milestone 2 checklist : 
+
+- That you can handle the data in its size.
+<p>We have explored the data thoroughly in different files with names DataExploration.</p>
+-  understand what’s into the data (formats, distributions, missing values, correlations, etc.).
+<p> During the data exploration we have noticed that they are many many missing values. This will impact negatively on our analysis. However we can keep the values that exist and work with them. TODO HERE EXPLAIN DIFFERENT VALUES </p>
+- considered ways to enrich, filter, transform the data according to your needs.
+<p> We have worked towards getting the distance that the articles have travelled. (DistanceCalculations.ipynb) We also have been trying to get the origin of articles where the information is missing ( VeryBeautifulSoupTesting.ipynb )
+</p>
+- updated your plan in a reasonable way, reflecting your improved knowledge after data acquaintance.
+
+<p> discuss how your data suits your project needs and discuss the methods you’re going to use, giving their essential mathematical details in the notebook. </p>
+
+- your plan for analysis and communication is now reasonable and sound, potentially discussing alternatives to your choices that you considered but dropped.
