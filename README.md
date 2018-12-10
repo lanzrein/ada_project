@@ -73,15 +73,22 @@ We already face several problems and thought of ways to overcome them.
 
 **What next ?**
 
-In the end, we would be interested in doing a sort of ecological competition between each country. This would be done by allocating points to each country based on how ecological they are on each categories. In the end we would have a leaderboard of the countries and this would give some insights on how good the countries are at being ecological. 
+As the data are completed mainly with French product doing a comparison between countries is not that fair. Clearly, the dataset may not be big enough to be representatives of the other countries. Thus, we decided to base our analysis on French product, draws hypothesis and then try to find if similar behaviors are observed in others countries where we have data.
 
-The competition ??
+In this subset we will have an interest on products where we can compute the distance it has travelled. On those products we will do an in depth analysis and see what kind of food travels the most. With those information we can lead some hypothesis testing with regards to other countries. 
+
+Our analysis will also use the labels, palm oil information already computed. We will use them in a correlation relation with the distance and see if there is any relation to the labels and/or palm oil usage. For example we expect to see articles with the label "Agriculture Biologique" to have travelled considerably less than other kind of articles. 
+
+
 
 ## Final milestone goals : 
-- Compute a fair equation to express the carbon footprint of the food. 
-- Create a graph that will show who imports and who exports
-- ???
-
+- Compute distance for each article.
+- Create a network graph that will show where the articles are from
+- Compute a correlation between labels /distance, labels/palm oil
+- Group articles by categories and do hypothesis testing to see if other countries have the same tendencies for distance
+- Link distance and category of product
+- Write report about our analysis
+- Create a poster that visualize and ties everything up
 
 ## Questions for TA : 
 - Is there a library that works like folium that allows to do network graphs ? 
