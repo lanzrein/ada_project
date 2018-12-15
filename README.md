@@ -92,3 +92,16 @@ Our analysis will also use the labels, palm oil information already computed. We
 
 ## Questions for TA : 
 - Is there a library that works like folium that allows to do network graphs ? 
+
+---------------------------------------
+
+# Milestone 3 checklist : 
+# Report 
+- The report was done in the 4-page double column PDF report. 
+## Goals
+- All the goals that we set fo our final milestone goal have been reached with the exception of the poster that will be done during the winter break as it needs to be done still. 
+### Contribution list
+- Nicolas Freundler : Vegan products study, Local rule analysis, PCA, ICA, neural net.
+- Jennifer Veillard : Preprocessing of data, computing distance for products, dictionary to find translate the countries.
+- Johan Lanzrein : Palm oil, ecological labels, origins of french products, origin by category study. 
+- Each person was responsible to write the part of the report and produce visualization related to her/his part. 
