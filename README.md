@@ -99,18 +99,18 @@ Our analysis will also use the labels, palm oil information already computed. We
 # Report 
 - The report was done in the 4-page double column PDF report. 
 ## Structure of the repo
-+data contains data should be local
-+data_exploration : contains all the information about data exploration (vegan, labels, palm oil, water bottles, origin of products, relationships between category and distance..)
-+img : contains visualization of our work
-+notused : stuff we tried and didn't use..
-+preprocessing : all work about computing distance, cleaning data
-+report : contains the tex file for report 
-+statistical_analysis : contains the work we did on relationships between coutries
-.gitignore : a gitignore..
-Mileston2.ipynb : the milestone 2 notebook
-MilestoneFinal.ipynb : the milestone3 notebook
-README.md : a readme
-report.pdf : the 4-page report of our work. 
++ data/ contains data should be local
++ data_exploration/ : contains all the information about data exploration (vegan, labels, palm oil, water bottles, origin of products, relationships between category and distance..)
++ img/ : contains visualization of our work
++ notused/ : stuff we tried and didn't use..
++ preprocessing/ : all work about computing distance, cleaning data
++ report/ : contains the tex file for report 
++ statistical_analysis/ : contains the work we did on relationships between coutries
++ .gitignore : a gitignore..
++ Mileston2.ipynb : the milestone 2 notebook
++ MilestoneFinal.ipynb : the milestone3 notebook
++ README.md : a readme
++ report.pdf : the 4-page report of our work. 
 
 
 
